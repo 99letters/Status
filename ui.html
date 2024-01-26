@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, grey, white);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .status-button {
+            background-color: grey;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .status-button:hover {
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <button class="status-button" id="ready-for-dev">🟢 READY FOR DEV</button>
+    <button class="status-button" id="work-in-progress">🟡 WORK IN PROGRESS</button>
+    <button class="status-button" id="needs-update">🔴 NEEDS UPDATE</button>
+    <button class="status-button" id="do-not-reference">🟤 DO NOT REFERENCE</button>
+
+    <script>
+        // Set up message sending for each status button
+        document.getElementById('ready-for-dev').addEventListener('click', () => {
+            parent.postMessage({ pluginMessage: { type: 'set-layer-title', title: '🟢 READY FOR DEV' } }, '*');
+        });
+        document.getElementById('work-in-progress').addEventListener('click', () => {
+            parent.postMessage({ pluginMessage: { type: 'set-layer-title', title: '🟡 WORK IN PROGRESS' } }, '*');
+        });
+        document.getElementById('needs-update').addEventListener('click', () => {
+            parent.postMessage({ pluginMessage: { type: 'set-layer-title', title: '🔴 NEEDS UPDATE' } }, '*');
+        });
+        document.getElementById('do-not-reference').addEventListener('click', () => {
+            parent.postMessage({ pluginMessage: { type: 'set-layer-title', title: '🟤 DO NOT REFERENCE' } }, '*');
+        });
+    </script>
+</body>
+</html>

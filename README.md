@@ -1,8 +1,9 @@
+# 🎨 Status for Figma Plugin
 これはFigmaのプラグイン用に作成した「Status」です。
 どれが開発中なのか実装中なのか？デザイン考案事項なのか？を4段階の進捗状況で揺らぎをレイヤータイトルに簡単に変更してくれます。
 ローカルFigmaアプリより開発を読み込みし起動させてください。
 
-# 🎨 Status for Figma Plugin
+
 To never stop building ideas.
 
 Below are the steps to get your plugin running. You can also find instructions at:

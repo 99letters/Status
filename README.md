@@ -3,6 +3,7 @@
 <img width="1270" alt="スクリーンショット 2024-03-08 15 28 39" src="https://github.com/99letters/Status/assets/75833079/a84f30b7-51bb-48ab-a692-6fb949191134">
 どれが開発中なのか実装中なのか？デザイン考案事項なのか？を4段階の進捗状況で揺らぎをレイヤータイトルに簡単に変更してくれます。
 ローカルFigmaアプリより開発からプラグインのマニフェストを読み込みし起動させてください。
+
 <img width="421" alt="スクリーンショット 2024-03-08 15 28 57" src="https://github.com/99letters/Status/assets/75833079/c8329327-1edf-4bb4-90e6-4f5bc37693eb">
 
 To never stop building ideas.
